@@ -1,0 +1,21 @@
+import random
+
+dice1 = 0
+dice2 = 1
+dice3 = 2
+dice4 = 3
+dice5 = 4
+
+counter = 0
+while not dice1 == dice2 == dice3 == dice4 == dice5:
+    counter+= 1
+    dice1 = random.randint(1,100)
+    dice2 = random.randint(1,100)
+    dice3 = random.randint(1,100)
+    dice4 = random.randint(1,100)
+    dice5 = random.randint(1,100)
+
+    print(dice1, dice2, dice3, dice4, dice5)
+
+print("Rolled the same dice after", counter, "times!")
+
